@@ -1,6 +1,7 @@
 .inputs-form{
     display: flex;
     flex-direction: row;
+    
 }
 
 input[type="file"] {
@@ -10,32 +11,48 @@ input[type="file"] {
 .inputs-label{
     border-radius: 8px;
     color: var(--gray);
-    border: 2px solid var(--gray-100);
+    border: 1px solid var(--gray-100);
     width: 288px;
     height: 212px;
+    padding:  90px 110px;
 }
 
 .input-text{
     width: 328px;
     height: 56px;
     margin-bottom: 16px;
+    border: 1px solid var(--gray-100);
+    padding: 0 16px;
 }
 
 .input-description{
+    border: 1px solid var(--gray-100);
     width: 417px;
     height: 136px;
     margin-bottom: 16px;
+    padding: 0 16px;
 }
 
 .inputs-and-button{
     display: flex;
     flex-direction: column;
+    margin-left: 16px;
 }
 
 .inputs-button{
     width: 121px;
     height: 56px;
     border-radius: 8px;
+    transition: background-color 0.2s linear;
+}
+
+
+.inputs-button:hover{
+    background: var(--red-50);
+}
+
+.inputs-button:active{
+    background: var(--red-300);
 }
 
 .input-description-and-button{
@@ -43,3 +60,4 @@ input[type="file"] {
     flex-direction: column;
     align-items: flex-end;
 }
+
