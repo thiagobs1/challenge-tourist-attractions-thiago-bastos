@@ -21,7 +21,8 @@
                 <h2 class="inputs-title">Adicionar um Ponto Turístico</h2>
               <form class="inputs-form">
                   <label class="inputs-label" for="Image">Imagem</label>
-                <input class="inputs input-image" type="file" name="Image" id="Image" accept="image/*"  />
+                  <img class="item-image" src="" id="img-input" >
+                <input class="inputs input-image" type="file" name="Image" id="Image" accept="image/*" />
                 <div class="inputs-and-button"> 
                     <input class="inputs input-text" type="text" name="title" id="title" placeholder="Título"/>
                     <div class="input-description-and-button">
@@ -35,11 +36,10 @@
 
             <div class="list-results">
                 <div class="list-results-head">
-                    <strong>Pontos Turísticos</strong>
+                    <strong class="list-title">Pontos Turísticos</strong>
                 </div>
-                <ul class="list-items"></ul>
+                <ul class="list-items-wrapper"></ul>
             </div>
-
         </section>
     </main>
 

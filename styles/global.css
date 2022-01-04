@@ -17,3 +17,12 @@ button{
     color: var(--white);
     background-color: var(--red-100);
 }
+p{
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+}
+input,
+label{
+    font-family: "Roboto", sans-serif;
+    color: var(--gray);
+}

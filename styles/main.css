@@ -1,6 +1,7 @@
 @import "global.css";
 @import "variaveis.css";
 @import "forms.css";
+@import "items.css";
 
 .inputs-container{
     margin: 48px 0 0 130px;
