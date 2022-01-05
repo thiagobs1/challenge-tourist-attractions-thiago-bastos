@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(){
           var preview = document.getElementById("img-input");
           preview.src = src;
           preview.style.display = "none";
+          alert("Seu file foi carregado com sucesso!");
         }
       }
 
@@ -22,8 +23,8 @@ document.addEventListener("DOMContentLoaded", function(){
         e.preventDefault();
 
         const itemTitle = e.target["title"].value;
-        const itemImage = e.target["img-input"].src;
         const itemDescription = e.target["description"].value;
+        const itemImage = e.target["img-input"].src;
         
 
         if(itemTitle == ""){
@@ -41,8 +42,9 @@ document.addEventListener("DOMContentLoaded", function(){
                 description: itemDescription
             }
             list.push(item);
-            console.log(item)
+           
             renderListItems();
+            resetInputs();
             
         }
     }
@@ -67,7 +69,11 @@ document.addEventListener("DOMContentLoaded", function(){
         items.innerHTML = structure;
     }
 
+  function resetInputs(){
+      titleInput.value = "";
+      descriptionInput.value = "";
     
+  }
 
 
-})
+});

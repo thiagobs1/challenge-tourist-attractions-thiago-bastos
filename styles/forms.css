@@ -61,3 +61,37 @@ input[type="file"] {
     align-items: flex-end;
 }
 
+@media screen and (max-width: 768px){
+    .inputs-form{
+        display: flex;
+        flex-direction: column;
+        max-width:343px;
+        max-height: 500px;
+    }
+    .inputs-label{
+        margin-bottom: 16px;
+    }
+    .input-description-and-button{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .inputs-and-button{
+        margin: 0;
+    }
+
+    .inputs-button{
+        width: 343px;
+        width: 100%;
+    }
+    .input-text{
+        width: 343px;
+        width: 100%;
+    }
+    .input-description{
+        max-width:343px;
+        height: 136px;
+        width: 100%;
+    }
+}

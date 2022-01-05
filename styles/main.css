@@ -3,7 +3,7 @@
 @import "forms.css";
 @import "items.css";
 
-.inputs-container{
+.list-container{
     margin: 48px 0 0 130px;
 }
 
@@ -11,5 +11,16 @@
     margin-bottom: 32px;
     font-size: 32px;
     font-weight: 700;
+}
+
+@media screen and (max-width: 1023px) {
+    .list-container{
+        padding: 0 16px;
+        margin: 0;
+    }
+    .inputs-title{
+        margin-top: 16px;
+        
+    }
 }
 
